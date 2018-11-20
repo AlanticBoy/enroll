@@ -1,0 +1,100 @@
+/* Header */
+body{
+	font-size:0.8em;
+	height:100%;
+	width:100%;
+}
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: 100% 100%;
+	background-position: center center;
+	z-index: 1;
+}
+
+.demo-1 .large-header {
+	background-image: url('../img/star.jpg');
+}
+.logo_box{
+	width: 400px;
+	height: 500px;
+	color: #EEE;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -200px;
+	margin-top: -260px;
+}
+.logo_box h3{
+	text-align: center;
+	font: 28px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei",sans-serif;
+	color: #FFFFFF;
+	height: 26px;
+	padding:0 0 20px 0; 
+}
+.logo_box .box_content {
+	margin: 10px auto;
+	text-align: center;
+}
+
+.logo_box .box_content2 {
+	margin: 10px auto;
+	text-align: center;
+}
+
+.logo_box input[type="text"] {
+	border: 1px solid #4476A7;
+	border-radius: 4px;
+	padding:4px 0;
+}
+
+input:focus {
+	border-style: solid;
+	border-color: #03a9f4;
+	box-shadow: 0 0 15px #03a9f4;
+}
+body .login_fields__submit {
+  position: relative;
+  top: 17px;
+  left: 0;
+  width: 80%;
+  right: 0;
+  margin: auto;
+}
+body .login_fields__submit .forgot {
+  float: right;
+  font-size: 10px;
+  margin-top: 11px;
+  text-decoration: underline;
+}
+body .login_fields__submit .forgot a {
+  color: #606479;
+}
+body .login_fields__submit input {
+  border-radius: 50px;
+  background: transparent;
+  padding: 10px 50px;
+  border: 2px solid #4FA1D9;
+  color: #4FA1D9;
+  text-transform: uppercase;
+  font-size: 11px;
+  -webkit-transition-property: background,color;
+          transition-property: background,color;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+body .login_fields__submit input:focus {
+  box-shadow: none;
+  outline: none;
+}
+body .login_fields__submit input:hover {
+  color: white;
+  background: #4FA1D9;
+  cursor: pointer;
+  -webkit-transition-property: background,color;
+          transition-property: background,color;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}

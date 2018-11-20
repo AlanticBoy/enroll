@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mycat_web@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mycat_web">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="baishun"/>
+    <schema id="4" parent="1" name="hotel"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="ksxt"/>
+    <schema id="7" parent="1" name="managemrnt"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="patent"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="predicate"/>
+    <schema id="12" parent="1" name="private"/>
+    <schema id="13" parent="1" name="shop"/>
+    <schema id="14" parent="1" name="sys"/>
+    <schema id="15" parent="1" name="xxl-job"/>
+    <schema id="16" parent="1" name="ylpot"/>
+    <table id="17" parent="2" name="t_mycat_sqlsum"/>
+    <table id="18" parent="2" name="t_mycat_syssql"/>
+    <table id="19" parent="2" name="t_mycat_syssqlhig"/>
+    <table id="20" parent="2" name="t_mycat_syssqlslow"/>
+    <table id="21" parent="2" name="t_mycat_syssqltable"/>
+    <column id="22" parent="17" name="SID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="17" name="DB_NAME">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="24" parent="17" name="R">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="25" parent="17" name="PERCENT_R">
+      <Position>4</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="26" parent="17" name="MAX">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="27" parent="17" name="W">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="28" parent="17" name="ID">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="29" parent="17" name="TIME_COUNT">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="17" name="USER">
+      <Position>9</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="31" parent="17" name="LAST_TIME">
+      <Position>10</Position>
+      <DataType>bigint(13)|0</DataType>
+    </column>
+    <column id="32" parent="17" name="LAST_TM">
+      <Position>11</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="33" parent="17" name="TTL_COUNT">
+      <Position>12</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="34" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="18" name="SID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="36" parent="18" name="ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="37" parent="18" name="DB_NAME">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="38" parent="18" name="START_TIME">
+      <Position>4</Position>
+      <DataType>bigint(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="18" name="EXECUTE_TIME">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="18" name="USER">
+      <Position>6</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="18" name="CONTENT">
+      <Position>7</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="18" name="START_TM">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="18" name="IPAddr">
+      <Position>9</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <key id="44" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="19" name="SID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="46" parent="19" name="ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="19" name="DB_NAME">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="48" parent="19" name="AVG_TIME">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="49" parent="19" name="MAX_TIME">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="50" parent="19" name="EXECUTE_TIME">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="19" name="FREQUENCY">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="52" parent="19" name="MIN_TIME">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="53" parent="19" name="LAST_TIME">
+      <Position>9</Position>
+      <DataType>bigint(15)|0</DataType>
+    </column>
+    <column id="54" parent="19" name="CONTENT">
+      <Position>10</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="55" parent="19" name="LAST_TM">
+      <Position>11</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="56" parent="19" name="username">
+      <Position>12</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <key id="57" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="20" name="SID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="59" parent="20" name="DB_NAME">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="20" name="START_TIME">
+      <Position>3</Position>
+      <DataType>bigint(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="20" name="EXECUTE_TIME">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="20" name="USER">
+      <Position>5</Position>
+      <DataType>varchar(25)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="20" name="CONTENT">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="20" name="START_TM">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="20" name="IPAddr">
+      <Position>8</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <key id="66" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="67" parent="21" name="SID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="68" parent="21" name="DB_NAME">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="69" parent="21" name="DB_TABLE">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="21" name="RELACOUNT">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="71" parent="21" name="R">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="72" parent="21" name="PERCENT_R">
+      <Position>6</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="73" parent="21" name="W">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="74" parent="21" name="RELATABLE">
+      <Position>8</Position>
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <column id="75" parent="21" name="ID">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="76" parent="21" name="LAST_TIME">
+      <Position>10</Position>
+      <DataType>bigint(13)|0</DataType>
+    </column>
+    <column id="77" parent="21" name="LAST_TM">
+      <Position>11</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="78" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网上报名APP端</title>
+    <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+    <link type="text/css" rel="stylesheet" href="css/component.css"/>
+</head>
+
+<body>
+<div class="container demo-1">
+    <div class="content">
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <div class="logo_box">
+                <h3>系楼532实验室招新</h3>
+                <div id="content">
+                    <div id="nameDiv" class="box_content">
+                        <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+                        <input id="name" type="text"> <br/>
+                        <span id="nameSpan"></span>
+                    </div>
+                    <div id="segmentDiv" class="box_content">
+                        <span>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</span>
+                        <input id="segment" type="text"> <br/>
+                        <span id="segSpan"></span>
+                    </div>
+                    <div class="box_content2">
+                        兴趣方向
+                        <input name="entainment" type="radio" value="Java" checked="checked">Java
+                        <input name="entainment" type="radio" value="C#">C#&nbsp;
+                        <input name="entainment" type="radio" value="qianduan">前端
+                        <input name="entainment" type="radio" value="Python">Python
+                    </div>
+                    <div id="phoneDiv" class="box_content">
+                        <span>联系方式</span>
+                        <input id="phone" type="text"> <br/> <span
+                            id="phoneSpan"></span>
+                    </div>
+                    <div class='login_fields__submit box_content'>
+                        <input id="sbmit" type='button' value='提交'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/wangshang.js"></script>
+
+<script>
+    window.onload = function () {
+        var width, height, largeHeader;
+        // Main
+        initHeader();
+        function initHeader() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            largeHeader = document.getElementById('large-header');
+            largeHeader.style.height = height + 160 + 'px';
+        }
+
+    };
+</script>
+</body>
+</html>

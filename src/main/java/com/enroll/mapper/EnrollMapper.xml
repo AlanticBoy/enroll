@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.enroll.mapper.EnrollMapper">
+    <insert id="insertAItem" parameterType="com.enroll.POJO.Enrollment">
+    INSERT INTO submt(name, segment, entainment, phone) VALUES (#{name},#{segment},#{entainment},#{phone})
+</insert>
+
+    <select id="selectByEntainment" parameterType="string" resultType="map">
+        SELECT * FROM submt WHERE entainment=#{entainment}
+    </select>
+</mapper>
